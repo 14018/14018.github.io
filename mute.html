@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="simplelightbox-master/dist/simplelightbox.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mute</title>
+        <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="js/modernizr.custom.js"></script>
+        <script>var lightbox = $('.gallery a').simpleLightbox(options);</script>
+	</head>
+	
+    <body class="mutebg" style="background-image:url(img/mute%20bg.png)">
+        
+        <div id="navbar">
+<span style="cursor:pointer" onclick="openNav()">&#9776;  M U T E </span>
+        </div>
+      
+        
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+ 
+   
+  <div class="navlinks">
+    <a href="index.html" >Home</a>
+    <a href="mute.html" >Explore</a>
+    <a href="talk.html" >Talk</a>
+    <a href="learn.html" >Learn</a>
+  </div>
+
+</div>
+<h1 id="mute" style="color: #f9f8f1">M U T E</h1>
+        
+        <div class="container">
+		<h1 class="align-center" id="h1mute" style="color: #f9f8f1">g a l l e r y</h1>
+		<div class="gallery">
+			<a href="img/Flyers.png" ><img src="img/Flyers.png" alt="Promotional flyers created for the game concept 'Mute'" title="Promotional flyers created for the game concept 'Mute' " /></a>
+             <a href="img/poster.png"><img src="img/poster.png" alt="A poster for the game 'Mute'" title="A poster for the game 'Mute'"/></a>
+			<a href="img/Night%20scene.png"><img src="img/Night%20scene.png" alt=""Concept art featuring the main character with her companion at night"" title="Concept art featuring the main character with her companion at night"/></a>
+           
+            <a href="img/buildings.png"><img src="img/buildings.png" alt="Concpet art of buildings" title="Concpet art of buildings"/></a>
+            <div class="clear"></div>
+
+		</div>
+	</div>
+        
+        <h1  style="color: #f9f8f1">F A Q</h1>
+        <div class="wrapper">
+			<ul class="grid effect-2" id="grid">
+				<li><img src="img/box%202.png"> <div class="centered">What is Mute? <br/><br/> Mute is a concept for an adventure story game created by Tina Ma. It focuses on the theme of social anxiety and its goal is to raise awareness of this issue in a more fun and interactive way.</div></li>
+                <li><img src="img/box%201%20eyes.png"></li>
+				<li><img src="img/box%203.png"><div class="centered">When can I play this game? <br/><br/> Mute is still in its conceptual stage and Tina is still developing this concept. We're sorry that it probably won't be anytime soon, but if you're interested in seeing other stuff Tina has worked on or want to support what she does, check out her social media links on the home page! </div></li>
+				<li><img src="img/box%204.png"><div class="centered">Why social anxiety? <br/><br/> Social anxiety is an issue Tina feels isn't talked about enough. The resources available aren't too interesting either, most of them being quite heavy on text. Tina hopes that her game can bring a new perspective to mental illnesses, making it easier for people to talk about. 
+            </div></li>
+                	<li><img src="img/box%202%20mute.png"></li>
+				<li><img src="img/box%201%20bubble.png"></li>
+				<li><img src="img/box%201.png"><div class="centered">If you have any more questions or suggestions, email use at: <br/>
+                    14018@my.westlakegirls.school.nz
+            </div></li>
+            </ul>
+        </div>
+
+                
+            
+                
+      <script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>          
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/simple-lightbox.js"></script>
+        
+      
+                
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+ 
+window.onscroll = function() {myFunction()};
+
+
+var navbar = document.getElementById("navbar");
+
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+            
+        
+            <script>
+                /*
+	By André Rinas, www.andrerinas.de
+	Available for use under the MIT License
+	1.13.0
+*/
+                
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
+  
+
+   
+    </body>
+</html>

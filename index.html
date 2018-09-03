@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mute</title>
+	</head>
+	<body class="index">
+        
+        <div id="navbar">
+<span style="cursor:pointer" onclick="openNav()">&#9776;  M U T E </span>
+        </div>
+      
+        
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+ 
+   
+  <div class="navlinks">
+    <a href="index.html" >Home</a>
+    <a href="mute.html" >Explore</a>
+    <a href="talk.html" >Talk</a>
+    <a href="learn.html" >Learn</a>
+  </div>
+
+</div>
+        
+        <div class="parallax">
+    <div class="parallax__layer parallax__layer__1">
+        <img src="img/layer%206.png" />
+    </div>
+    <div class="parallax__layer parallax__layer__2">
+        <img src="img/layer%205.png" />
+    </div>
+    <div class="parallax__layer parallax__layer__3">
+        <img src="img/layer%204.png" />
+    </div>
+    <div class="parallax__layer parallax__layer__4">
+        <img src="img/layer%203.png" />
+    </div>
+    <div class="parallax__layer parallax__layer__5">
+        <img src="img/layer%202.png" />
+    </div>
+            <div class="textlayer">
+    <div class="parallax__layer parallax__layer__6">
+        <img src="img/layer%201.png" /> <div class="about"><h1>About this website</h1>
+        <p>Hi there! My name is Tina Ma and I am an aspiring concept artist. "Mute" is my biggest project thus far; a conceptual game design that aims to illustrate social anxiety through an interactive lens.  I've collaborated with my friend Josephine Chen to bring you the "Mute" website, a place for you to explore the game concept, find helplines or learn more about the issue of social anxiety. </p></div>
+               <h1 class="social">If you like my work here, please check out more of my stuff using my social media links!</h1><div class="smlinks"><a href="https://www.instagram.com/lil.peckish/" target="_blank"><img class="insta" src="img/insta.png" alt="instagram"></a>
+        <a href="https://www.deviantart.com/lil-peckish" target="_blank"><img class="devart" src="img/devart.png" alt="instagram"></a>
+        </div></div>
+        
+               
+        
+    </div>
+</div>
+      
+       <!-- https://www.deviantart.com/lil-peckish-->
+
+        
+     
+        
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+   
+window.onscroll = function() {myFunction()};
+
+
+var navbar = document.getElementById("navbar");
+
+
+var sticky = navbar.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+   
+    </body>
+</html>

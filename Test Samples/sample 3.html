@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sample</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+	</head>
+
+	<body>
+         <!-- The overlay -->
+        
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+   
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="mute.html">Explore</a>
+    <a href="talk.html">Talk</a>
+    <a href="learn.html">Learn</a>
+  </div>
+
+</div>
+       
+<div id="navbar">
+<!-- Use any element to open/show the overlay navigation menu -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">MUTE</span>
+        </div>
+        
+<ul class="grid effect-2" id="grid" style="position: relative; height: 8222.32px; perspective-origin: 50% 619.5px;">
+				
+				<li class="shown" style="position: absolute; left: 0px; top: 0px;"><img src="img/aus.png"></li>
+                <li class="shown" style="position: absolute; left: 307px; top: 0px;"><img src="img/canada.png"></li>
+				<li class="shown" style="position: absolute; left: 614px; top: 0px;"><img src="img/france.png"></li>
+				<li class="shown" style="position: absolute; left: 307px; top: 197px;"><img src="img/japan.png"></li>
+				<li style="position: absolute; left: 0px; top: 482px; animation-duration: 0.568507s;" class="animate"><a href="http://drbl.in/fHaa"><img src="img/nz2.png"></a></li>
+				<li style="position: absolute; left: 614px; top: 482px; animation-duration: 0.639518s;" class="animate"><a href="http://drbl.in/gXMo"><img src="img/aus.png"></a></li>
+				<li style="position: absolute; left: 307px; top: 679px;"><a href="http://drbl.in/gXMn"><img src="img/canada.png"></a></li>
+				<li style="position: absolute; left: 0px; top: 716px;"><a href="http://drbl.in/fzYo"><img src="img/japan.png"></a></li>
+				<li style="position: absolute; left: 614px; top: 716px;"><a href="http://drbl.in/fARU"><img src="img/usa.png"></a></li>
+				<li style="position: absolute; left: 307px; top: 877px;"><a href="http://drbl.in/fGhI"><img src="img/france.png"></a></li>
+				<li style="position: absolute; left: 0px; top: 913px;"><a href="http://drbl.in/fKCf"><img src="img/nz2.png"></a></li>
+				<li style="position: absolute; left: 614px; top: 913px;"><a href="http://drbl.in/fLBG"><img src="img/nz2.png"></a></li>
+				<li style="position: absolute; left: 307px; top: 1074px;"><a href="http://drbl.in/fPEY"><img src="img/aus.png"></a></li>
+				<li style="position: absolute; left: 0px; top: 1110px;"><a href="http://drbl.in/fWwG"><img src="img/canada.png"></a></li>
+				<li style="position: absolute; left: 614px; top: 1110px;"><a href="http://drbl.in/fQdt"><img src="img/france.png"></a></li>
+				<li style="position: absolute; left: 0px; top: 1308px;"><a href="http://drbl.in/fHaa"><img src="img/japan.png"></a></li>
+				<li style="position: absolute; left: 0px; top: 1541px;"><a href="http://drbl.in/gXMo"><img src="img/nz2.png"></a></li>
+				<li style="position: absolute; left: 307px; top: 1557px;"><a href="http://drbl.in/gXMn"><img src="img/france.png"></a></li>
+				<li style="position: absolute; left: 614px; top: 1593px;"><a href="http://drbl.in/fzYo"><img src="img/aus.png"></a></li>
+				<li style="position: absolute; left: 0px; top: 1775px;"><a href="http://drbl.in/fARU"><img src="img/japan.png"></a></li>
+				<li style="position: absolute; left: 307px; top: 1790px;">
+                    <img src="img/usa.png">
+    </li>
+    
+			
+			</ul>
+
+<style>
+.grid {
+	max-width: 50%;
+	list-style: none;
+	margin: auto;
+	padding: 0;
+}
+
+.grid li {
+	display: block;
+	float: left;
+	padding: 7px;
+	width: 33%;
+	opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+
+
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+	-webkit-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+
+
+                    </style>
+                    
+                    <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+    // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+   
+</script>
+  
+</html>

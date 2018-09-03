@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mute</title>
+        
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+          <!-- The overlay -->
+        
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+   
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="mute.html">Explore</a>
+    <a href="talk.html">Talk</a>
+    <a href="learn.html">Learn</a>
+  </div>
+
+</div>
+       
+<div id="navbar">
+<!-- Use any element to open/show the overlay navigation menu -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">MUTE</span>
+        </div>
+          <h1> T A L K</h1>
+        <p> If you’re stuck feeling down, there are many resources to help you figure out if it could be anxiety or depression. Whatever’s going on you’ll find ideas and people who can help you get unstuck. Talk to someone or visit any of these helpful links! </p>
+        
+		<div class="wrapper">
+			<ul class="grid effect-2" id="grid">
+				<li><img src="img/nz2.png"
+                         > <div class="centered">Need to talk? Free call or text 1737 any time for support from a trained counsellor <br/>
+            Lifeline – 0800 543 354 (0800 LIFELINE) or free text 4357 (HELP) <br/>
+      Healthline – 0800 611 116<br/>
+Samaritans – 0800 726 666 </div></li>
+				<li><img src="img/aus.png"><div class="centered"><a href="https://www.beyondblue.org.au" target="_blank" class="helplink">Beyondblue</a>
+                aims to increase awareness of depression and anxiety and reduce stigma. <br/>
+                Call 1300 22 4636, 24 hours / 7 days a week.</div></li>
+				<li><img src="img/usa.png"><div class="centered">National Mental Health Association Information Centre
+1-800-969-6642 <br/>
+                <a href="http://www.samaritansusa.org" target="_blank" class="helplink">Samaritans USA</a>
+               <br/>Find help at <a href="https://adaa.org/" target="_blank" class="helplink">Anxiety and Despression Association of America</a>
+            </div></li>
+				<li><img src="img/japan.png"></li>
+				<li><img src="img/nz2.png"></li>
+				<li><img src="img/usa.png"></li>
+				<li><img src="img/canada.png"></li>
+				<li><img src="img/aus.png"></li>
+				<li><img src="img/france.png"></li>
+				<li><img src="img/nz2.png"></li>
+				<li><img src="img/japan.png"></li>
+				<li><img src="img/france.png"></li>
+				<li><img src="img/aus.png"></li>
+				<li><img src="img/canada.png"> </li>
+				<li><img src="img/france.png"></li>
+			</ul>
+		</div>
+        
+        
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
+        
+        <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+    // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+        
+        
+	</body>
+</html>

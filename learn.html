@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+        
+            <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mute</title>
+	</head>
+	<body>
+        <!-- The overlay -->
+        
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+   
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="mute.html">Explore</a>
+    <a href="talk.html">Talk</a>
+    <a href="learn.html">Learn</a>
+  </div>
+
+</div>
+       
+<div id="navbar">
+<!-- Use any element to open/show the overlay navigation menu -->
+<span style="cursor:pointer" onclick="openNav()">&#9776;  M U T E </span>
+        </div>
+        
+        <h1 class="h1learn"> L E A R N</h1>
+        <p> Like any mental illness, social anxiety isn't always easy to understand. It isn't the same for everyone. It's always good to learn about what could be affecting yourself or others. Here are some useful videos, websites and articles to get you started. </p>
+        
+             <div class="thing">
+        <div><img class="slideimg" src="img/workbook.png" alt="pic"><div class="btn"><a href="http://martinantony.com/wp-content/uploads/10-Simple-Solutions-to-Shyness.pdf" class="helplink" target="_blank">R E A D</a></div></div>
+        <div><img class="slideimg" src="img/whatisitlike.png" alt="pic"><div class="btn"><a href="https://socialanxietyinstitute.org/living-with-social-anxiety" class="helplink" target="_blank">R E A D</a></div></div>
+        <div><img class="slideimg" src="img/whatisit.png" alt="pic"><div class="btn"><a href="http://www.youper.co/understanding-social-anxiety-ultimate-guide" class="helplink" target="_blank">R E A D</a></div></div>
+        <div><img class="slideimg" src="img/sparx.png" alt="pic"><div class="btn"><a href="https://www.sparx.org.nz/" class="helplink" target="_blank">P L A Y !</a> </div></div>
+        <div><img class="slideimg" src="img/lowdown.png" alt="pic"><div class="btn"><a href="https://thelowdown.co.nz/" class="helplink" target="_blank">V I S I T</a> </div></div>
+        <div><img class="slideimg" src="img/reddit.png" alt="pic"><div class="btn"><a href="https://www.reddit.com/r/socialanxiety/" class="helplink" target="_blank">V I S I T</a> </div></div>
+         
+    </div>
+        
+ <div class="video"> <iframe width="853" height="480" src="https://www.youtube.com/embed/6KkObSWyhYc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        <p class="vid"> A short film by Kat Napiorkowska, a filmmaker based in Poland. Her short film "Living with social anxiety" gives an introspective view on what one may experience when affect by social anxiety. To check out more of her videos, go to her Youtube channel: <a class="vidlink" target="_blank" href="https://www.youtube.com/user/heylove123x/featured">Kat Napiorkowska</a></p>
+        
+       <div class="video"> <iframe width="853" height="480" src="https://www.youtube.com/embed/_G_VbEEowt8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        
+        <p class="vid"> "There is still a lot of stigma attached to social anxiety, so Psych2Go wants to shed light on what it is really like to have social anxiety. Here are 5 Things About Social Anxiety No One Talks About! If you are socially anxious, you may literally feel sick, undeserving of happiness, and lonely." To check out more of their videos, go to the Psych2Go Youtube channel: <a class="vidlink" target="_blank" href="https://www.youtube.com/user/Psych2GoTv/featured">Psych2Go</a></p>
+        
+
+        
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript"></script>
+    <script type="text/javascript">
+  
+$(document).ready(function(){
+  $('.thing').slick({
+    autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      arrows: true,
+     
+  });
+});
+    </script>
+        
+        
+     
+        
+       
+<script type="text/javascript">
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+    // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+        </script>
+    
+       
+   
+    </body>
+</html>
